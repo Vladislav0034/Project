@@ -1,0 +1,98 @@
+{
+  "history": [
+    {
+      "themeQuest": "В каком году была основана Москва? (число)",
+      "questAnswer": "1147",
+      "deckId": 1,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "Кто был первым царём из династии Романовых? (имя)",
+      "questAnswer": "Михаил",
+      "deckId": 1,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "В каком году состоялась Куликовская битва?",
+      "questAnswer": "1380",
+      "deckId": 1,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "Кто стал первым космонавтом в истории человечества? (фамилия)",
+      "questAnswer": "Гагарин",
+      "deckId": 1,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "Какое событие произошло 9 мая 1945 года?",
+      "questAnswer": "День Победы",
+      "deckId": 1,
+      "userAnswer": ""
+    }
+  ],
+  "literature": [
+    {
+      "themeQuest": "Кто написал роман «Война и мир»? (фамилия)",
+      "questAnswer": "Толстой",
+      "deckId": 2,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "Как называется самая известная пьеса Александра Сергеевича Пушкина?",
+      "questAnswer": "Государь",
+      "deckId": 2,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "Кто является автором романа «Преступление и наказание»? (фамилия)",
+      "questAnswer": "Достоевский",
+      "deckId": 2,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "Как называется самое известное произведение Николая Васильевича Гоголя?",
+      "questAnswer": "Мёртвые души",
+      "deckId": 2,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "Кто написал повесть «Шинель»? (фамилия)",
+      "questAnswer": "Гоголь",
+      "deckId": 2,
+      "userAnswer": ""
+    }
+  ],
+  "science": [
+    {
+      "themeQuest": "Сколько агрегатных состояний у водки?",
+      "questAnswer": "а кто вообще знает?",
+      "deckId": 3,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "Кто открыл периодический закон химических элементов? (фамилия)",
+      "questAnswer": "Менделеев",
+      "deckId": 3,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "Кто выдвинул теорию относительности?",
+      "questAnswer": "Эйнштейн",
+      "deckId": 3,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "Кто открыл электрон? (фамилия)",
+      "questAnswer": "Томсон",
+      "deckId": 3,
+      "userAnswer": ""
+    },
+    {
+      "themeQuest": "Что такое солнце?",
+      "questAnswer": "Звезда",
+      "deckId": 3,
+      "userAnswer": ""
+    }
+  ]
+}
