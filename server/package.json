@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node src/server.js",
+    "db:reset": "sequelize-cli db:drop && sequelize-cli db:create && sequelize-cli db:migrate && sequelize-cli db:seed:all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
