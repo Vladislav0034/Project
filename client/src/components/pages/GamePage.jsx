@@ -17,8 +17,17 @@ export default function GamePage() {
   useEffect(() => {
     if (!Number.isNaN(+id)) {
       fetch(`/api/decks/${id}`)
-        .then((data) => data.json())
-        .then((card) => setQuestions(card));
+        //.then((data) => data.json())
+        .then((data) => {
+          console.log('Ответ от сервера:', data); // Проверка ответа 
+          return data.json(); 
+        })
+        //.then((card) => {
+          //console.log('Преобразованный JSON:', card);
+          //const { themeQuest } = card; // Извлекаем только `questions` из объекта
+          //setQuestions(questions); // Обновляем state с помощью извлеченных `questions`
+        //});
+        .then((card) => setQuestions(card.questions));
     }
 
     if (Number.isNaN(+id)) {
