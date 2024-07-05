@@ -7,7 +7,7 @@ deckRouter.get('/', async (req, res) => {
   res.status(200).json(data);
 });
 
-deckRouter.get('/:id', async (req, res) => {
+deckRouter.get('/game/:id', async (req, res) => {
   const { id } = req.params;
 
   try {

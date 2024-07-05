@@ -24,43 +24,24 @@ export default function GamePage() {
     if (Number.isNaN(+id)) {
       return <h1>Неверный ID</h1>;
     }
-  }, );
+  }, [id]);
 
   return (
     <div className="container">
       <h2 className="mb-4">Вопросы по Вашей теме</h2>
       <ListGroup className="mt-4 mb-4 ">
-        <ListGroup.Item className="d-flex justify-content-between">
-          <span>Глубина озера байкал</span>
-          <Button variant="success" onClick={handleShowModal}>
-            Ответить на вопрос
-          </Button>
-        </ListGroup.Item>
-        <ListGroup.Item className="d-flex justify-content-between">
-          <span>Dapibus ac facilisis in</span>
-          <Button variant="success" onClick={handleShowModal}>
-            Ответить на вопрос
-          </Button>
-        </ListGroup.Item>
-        <ListGroup.Item className="d-flex justify-content-between">
-          <span>Morbi leo risus</span>
-          <Button variant="success" onClick={handleShowModal}>
-            Ответить на вопрос
-          </Button>
-        </ListGroup.Item>
-        <ListGroup.Item className="d-flex justify-content-between">
-          <span>Porta ac consectetur ac</span>
-          <Button variant="success" onClick={handleShowModal}>
-            Ответить на вопрос
-          </Button>
-        </ListGroup.Item>
-        <ListGroup.Item className="d-flex justify-content-between">
-          <span>Vestibulum at eros</span>
-          <Button variant="success" onClick={handleShowModal}>
-            Ответить на вопрос
-          </Button>
-        </ListGroup.Item>
-      </ListGroup>
+       {questions.map((question, index) => (
+         <ListGroup.Item key={index} className="d-flex justify-content-between">
+           <span>{question.themeQuest}</span> {/*  Замените "text" на поле, которое хранит текст вопроса в вашей базе данных */}
+           <Button variant="success" onClick={() => { 
+             handleShowModal(); 
+             setSelectedQuestion(question); // Установите выбранный вопрос
+           }}>
+             Ответить на вопрос
+           </Button>
+         </ListGroup.Item>
+       ))}
+     </ListGroup>
       <Button variant="outline-warning">Начать заново</Button>{' '}
       <MyModal
         show={showModal}
