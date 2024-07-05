@@ -10,7 +10,7 @@ export default function MyModal({ show, onHide, title, body, saveButtonText }) {
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>{body}</p>
+          <input/>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={onHide}>Close</Button>

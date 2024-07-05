@@ -4,19 +4,17 @@ import Button from 'react-bootstrap/Button';
 
 
 export default function MainPage() {
+
+  const links = [
+    {id: 1, name: 'История', href: '/game/1' },
+    {id: 2, name: 'литература', href: '/game/2' },
+    {id: 3, name: 'наука', href: '/game/3' }];
+
   return (
     <>
       <div>
         <h1>Выберите тему:</h1>
-        <Button id="literature" style={{ marginRight: '10px' }} variant="success">
-          Литература
-        </Button>
-        <Button id="history" style={{ marginRight: '10px' }} variant="success">
-          История
-        </Button>
-        <Button id="science" variant="success">
-          Наука
-        </Button>
+        {links.map((el) => (<Button style={{ marginRight: '10px' }} key={el.id} href={el.href} color="inherit">{el.name}</Button>))}
       </div>
     </>
   );
