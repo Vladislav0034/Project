@@ -1,10 +1,13 @@
-import React from "react";
+import React from 'react';
+import MainPage from './components/pages/MainPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <>
-    <h1>MAIN</h1>
+      <MainPage />
     </>
-  )
+  );
 }
 
 export default App;
