@@ -133,6 +133,8 @@ module.exports = {
     );
   },
 
+  // второй релиз
+
   async down(queryInterface, Sequelize) {
     await queryInterface.bulkDelete('Questions', null, {});
   },
